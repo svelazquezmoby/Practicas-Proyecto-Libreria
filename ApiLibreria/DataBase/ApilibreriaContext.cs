@@ -26,7 +26,7 @@ public partial class ApilibreriaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        base.OnConfiguring(optionsBuilder);
+        base.OnConfiguring(optionsBuilder);fd
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
