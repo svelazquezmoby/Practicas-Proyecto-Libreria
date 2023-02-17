@@ -5,7 +5,7 @@ namespace DataBase;
 
 public partial class Order
 {
-    public int OrderId { get; set; }s
+    public int OrderId { get; set; }
 
     public string Detail { get; set; } = null!;
 
