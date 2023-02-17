@@ -9,7 +9,7 @@ public partial class Book
 
     public string Title { get; set; } = null!;
 
-    public string Editorial { get; set; } = null!;
+    public string Editorial { get; set; } = null!;s
 
     public int? UserIdUser { get; set; }
 }

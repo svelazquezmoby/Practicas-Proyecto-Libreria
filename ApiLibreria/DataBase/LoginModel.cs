@@ -7,7 +7,7 @@ public partial class LoginModel
 {
     public int LoginId { get; set; }
 
-    public string UserName { get; set; } = null!;
+    public string UserName { get; set; } = null!;s
 
     public string Password { get; set; } = null!;
 }
