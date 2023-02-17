@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLibreria", "ApiLibreria\ApiLibreria.csproj", "{BE0464AB-0D80-478C-9792-0402E8000495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{39340FDA-628E-4A00-9CB5-9F7362343AE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BE0464AB-0D80-478C-9792-0402E8000495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0464AB-0D80-478C-9792-0402E8000495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0464AB-0D80-478C-9792-0402E8000495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39340FDA-628E-4A00-9CB5-9F7362343AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39340FDA-628E-4A00-9CB5-9F7362343AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39340FDA-628E-4A00-9CB5-9F7362343AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39340FDA-628E-4A00-9CB5-9F7362343AE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
