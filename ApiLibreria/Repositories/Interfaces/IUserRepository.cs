@@ -14,7 +14,7 @@ namespace Repositories.Interfaces
         Task<UserDTO> GetUser(int id);
         Task<UserDTO> PostUser(CreationUserDTO creationUserDTO);
         Task DeleteUser(int id);
-        Task<UserDTO> PutUser(PutUserDTO putUserDTO);
+        Task<UserDTO> PutUser(UpdateUserDTO updateUserDTO);
         Task<UserDTO> GetUserbyName(string name);
     }
 }

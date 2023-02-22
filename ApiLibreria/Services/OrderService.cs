@@ -1,5 +1,5 @@
 ﻿using DataBase;
-using DataBase.Dtos.Book;
+using DataBase.Dtos.Order;
 using Microsoft.IdentityModel.Logging;
 using Repositories.Interfaces;
 using Services.Interfaces;
@@ -11,43 +11,43 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class BookService: IBookService
+    public class OrderService: IOrderService
     {
         private readonly IBookRepository _booksRepository;
         private readonly LogHelper _logHelper;
 
-        public BookService(IBookRepository booksRepository, LogHelper logHelper)
+        public OrderService(IBookRepository booksRepository, LogHelper logHelper)
         {
             _booksRepository = booksRepository;
             _logHelper = logHelper;
         }
 
-        public void DeleteBook(int id)
+        public void DeleteOrder(int id)
         {
             throw new NotImplementedException();
         }
 
-        public BookDTO GetBook(int id)
+        public OrderDTO GetOrder(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<BookDTO> GetBookbyName(string name)
+        public List<Order> GetOrderbyDate(DateTime date)
         {
             throw new NotImplementedException();
         }
 
-        public List<Book> GetBooks()
+        public List<Order> GetOrders()
         {
             throw new NotImplementedException();
         }
 
-        public BookDTO PostBook(CreationBookDTO creationBookDTO)
+        public OrderDTO PostOrder(CreationOrderDTO creationOrderDTO)
         {
             throw new NotImplementedException();
         }
 
-        public BookDTO PutBook(UpdateBookDTO updateBookDTO)
+        public OrderDTO PutOrder(UpdateBookDTO updateBookDTO)
         {
             throw new NotImplementedException();
         }

@@ -1,8 +1,7 @@
 ﻿using DataBase;
-using DataBase.Dtos.Book;
+using DataBase.Dtos.User;
 using Microsoft.IdentityModel.Logging;
 using Repositories.Interfaces;
-using Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,43 +10,43 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class BookService: IBookService
+    public class UserService: IUserRepository
     {
         private readonly IBookRepository _booksRepository;
         private readonly LogHelper _logHelper;
 
-        public BookService(IBookRepository booksRepository, LogHelper logHelper)
+        public UserService(IBookRepository booksRepository, LogHelper logHelper)
         {
             _booksRepository = booksRepository;
             _logHelper = logHelper;
         }
 
-        public void DeleteBook(int id)
+        public Task DeleteUser(int id)
         {
             throw new NotImplementedException();
         }
 
-        public BookDTO GetBook(int id)
+        public Task<UserDTO> GetUser(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<BookDTO> GetBookbyName(string name)
+        public Task<UserDTO> GetUserbyName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public List<Book> GetBooks()
+        public Task<List<User>> GetUsers()
         {
             throw new NotImplementedException();
         }
 
-        public BookDTO PostBook(CreationBookDTO creationBookDTO)
+        public Task<UserDTO> PostUser(CreationUserDTO creationUserDTO)
         {
             throw new NotImplementedException();
         }
 
-        public BookDTO PutBook(UpdateBookDTO updateBookDTO)
+        public Task<UserDTO> PutUser(UpdateUserDTO updateUserDTO)
         {
             throw new NotImplementedException();
         }

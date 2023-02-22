@@ -1,4 +1,5 @@
 ﻿using DataBase;
+using DataBase.Dtos.Order;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Services.Interfaces
         List<Order> GetOrders();
         void DeleteOrder(int id);
         OrderDTO GetOrder(int id);
-        OrderDTO PutOrder(PutOrderDTO putOrderDTO);
+        OrderDTO PutOrder(UpdateBookDTO updateBookDTO);
         OrderDTO PostOrder(CreationOrderDTO creationOrderDTO);
         List<Order> GetOrderbyDate(DateTime date);
     }

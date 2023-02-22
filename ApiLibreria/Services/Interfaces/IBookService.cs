@@ -1,4 +1,5 @@
 ﻿using DataBase;
+using DataBase.Dtos.Book;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Services.Interfaces
             List<Book> GetBooks();
             void DeleteBook(int id);
             BookDTO GetBook(int id);
-            BookDTO PutBook(PutBookDTO putBookDTO);
+            BookDTO PutBook(UpdateBookDTO updateBookDTO);
             BookDTO PostBook(CreationBookDTO creationBookDTO);
             List<BookDTO> GetBookbyName(string name);
         
