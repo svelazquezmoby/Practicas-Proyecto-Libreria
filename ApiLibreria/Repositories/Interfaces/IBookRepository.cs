@@ -1,4 +1,5 @@
 ﻿using DataBase;
+using DataBase.Dtos.Book;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Repositories.Interfaces
         Task<BookDTO> GetBook(int id);
         Task<BookDTO> PostBook(CreationBookDTO creationBookDTO);
         Task DeleteBook(int id);
-        Task<BookDTO> PutBook(PutBookDTO putBookDTO);
+        Task<BookDTO> PutBook(UpdateBookDTO updateBookDTO);
         Task<List<BookDTO>> GetBookbyName(string name);
     }
 }
