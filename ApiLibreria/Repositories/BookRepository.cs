@@ -1,12 +1,10 @@
 ﻿using AutoMapper;
 using DataBase;
 using DataBase.Dtos.Book;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
+using Utils.Exceptions;
 
 namespace Repositories
 {
@@ -21,14 +19,30 @@ namespace Repositories
             _mapper = mapper;
         }
 
-        public Task DeleteBook(int id)
+        public async Task DeleteBook(int id)
         {
-            throw new NotImplementedException();
+            var book = await _apilibreriaContext.Books.FindAsync(id);
+
+            if (book == null)
+            {
+                throw new HttpException("No se encontró la computadora.", HttpStatusCode.NotFound);
+            }
+
+            _apilibreriaContext.Books.Remove(book);
+            await _apilibreriaContext.SaveChangesAsync();
         }
 
-        public Task<BookDTO> GetBook(int id)
+        public async Task<BookDTO> GetBook(int id)
         {
-            throw new NotImplementedException();
+            var book = await _apilibreriaContext.Books
+                                                    .FirstOrDefaultAsync(x => x.BookId == id);
+
+            if (book == null)
+            {
+                throw new HttpException("No se encontró la computadora.", HttpStatusCode.NotFound);
+            }
+
+            return _mapper.Map<BookDTO>(book);
         }
 
         public Task<List<BookDTO>> GetBookbyName(string name)
@@ -36,19 +50,24 @@ namespace Repositories
             throw new NotImplementedException();
         }
 
-        public Task<List<Book>> GetBooks()
+        public async Task<List<Book>> GetBooks()
         {
-            throw new NotImplementedException();
+            var books = await _apilibreriaContext.Books.ToListAsync();
+
+            return _mapper.Map<List<Book>>(books);
         }
 
-        public Task<BookDTO> PostBook(CreationBookDTO creationBookDTO)
+        public async Task<BookDTO> PostBook(CreationBookDTO creationBookDTO)
         {
             throw new NotImplementedException();
+
+
         }
 
-        public Task<BookDTO> PutBook(UpdateBookDTO updateBookDTO)
+        public async Task<BookDTO> PutBook(UpdateBookDTO updateBookDTO)
         {
             throw new NotImplementedException();
+
         }
     }
 }
