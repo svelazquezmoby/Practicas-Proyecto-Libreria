@@ -47,7 +47,7 @@ namespace Services
             throw new NotImplementedException();
         }
 
-        public OrderDTO PutOrder(UpdateBookDTO updateBookDTO)
+        public OrderDTO PutOrder(UpdateOrderDTO updateBookDTO)
         {
             throw new NotImplementedException();
         }

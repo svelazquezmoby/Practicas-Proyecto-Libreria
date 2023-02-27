@@ -14,7 +14,7 @@ namespace Repositories.Interfaces
         Task<OrderDTO> GetOrder(int id);
         Task<OrderDTO> PostOrder(CreationOrderDTO creationOrderDTO);
         Task DeleteOrder(int id);
-        Task<OrderDTO> PutOrder(UpdateBookDTO updateBookDTO);
+        Task<OrderDTO> PutOrder(UpdateOrderDTO updateOrderDTO);
         Task<List<OrderDTO>> GetOrderbyDate(DateTime date);
     }
 }

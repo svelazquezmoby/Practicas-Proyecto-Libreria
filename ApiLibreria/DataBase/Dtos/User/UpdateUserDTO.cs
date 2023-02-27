@@ -8,6 +8,7 @@ namespace DataBase.Dtos.User
 {
     public class UpdateUserDTO
     {
+        public int UserId { get; set; } 
         public string Name { get; set; } 
 
         public string LastName { get; set; } 

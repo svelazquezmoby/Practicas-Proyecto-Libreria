@@ -10,6 +10,7 @@ namespace DataBase.Dtos.User
 {
     public class CreationUserDTO
     {
+        public int UserId { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]
         [StringLength(maximumLength: 100, ErrorMessage = "{0} no debe tener mas de {1} caracteres")]
         [Mayuscula]

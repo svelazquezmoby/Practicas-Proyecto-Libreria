@@ -59,15 +59,40 @@ namespace Repositories
 
         public async Task<BookDTO> PostBook(CreationBookDTO creationBookDTO)
         {
-            throw new NotImplementedException();
-
-
+            var book = _mapper.Map<Book>(creationBookDTO);
+            _apilibreriaContext.Books.Add(book);
+            await _apilibreriaContext.SaveChangesAsync();
+            return await GetBook(book.BookId);
+        
         }
 
         public async Task<BookDTO> PutBook(UpdateBookDTO updateBookDTO)
         {
-            throw new NotImplementedException();
+            var book = _mapper.Map<Book>(updateBookDTO);
 
+            _apilibreriaContext.Entry(book).State = EntityState.Modified;
+
+            try
+            {
+                await _apilibreriaContext.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ExistsBook(updateBookDTO.BookId))
+                {
+                    return null;
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return await GetBook(book.BookId);
+        }
+        private bool ExistsBook(int id)
+        {
+            return _apilibreriaContext.Books.Any(x => x.BookId.Equals(id));
         }
     }
 }

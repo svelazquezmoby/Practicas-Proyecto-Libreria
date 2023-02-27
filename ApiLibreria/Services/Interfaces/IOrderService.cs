@@ -13,7 +13,7 @@ namespace Services.Interfaces
         List<OrderDTO> GetOrders();
         void DeleteOrder(int id);
         OrderDTO GetOrder(int id);
-        OrderDTO PutOrder(UpdateBookDTO updateBookDTO);
+        OrderDTO PutOrder(UpdateOrderDTO updateBookDTO);
         OrderDTO PostOrder(CreationOrderDTO creationOrderDTO);
         List<OrderDTO> GetOrderbyDate(DateTime date);
     }

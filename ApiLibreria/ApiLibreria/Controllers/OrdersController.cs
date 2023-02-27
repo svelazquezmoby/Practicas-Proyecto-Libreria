@@ -51,7 +51,7 @@ namespace ApiLibreria.Controllers
         /// <param name="putOrderDTO"></param>
         /// <returns></returns>
         [HttpPut("{id:int}")]
-        public OrderDTO PutBook(UpdateBookDTO updateBookDTO)
+        public OrderDTO PutBook(UpdateOrderDTO updateBookDTO)
         {
             return _orderService.PutOrder(updateBookDTO);
 

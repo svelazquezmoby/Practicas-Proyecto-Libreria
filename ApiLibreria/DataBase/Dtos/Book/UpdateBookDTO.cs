@@ -9,6 +9,7 @@ namespace DataBase.Dtos.Book
 {
     public class UpdateBookDTO
     {
+        public int BookId { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]
         [StringLength(maximumLength: 100, ErrorMessage = "{0} no debe tener mas de {1} caracteres")]
         public string Title { get; set; }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataBase.Dtos.Order
 {
-    public class UpdateBookDTO
+    public class UpdateOrderDTO
     {
+        public int OrderId { get; set; }
         public string Detail { get; set; } 
 
         public DateTime DateStart { get; set; }
