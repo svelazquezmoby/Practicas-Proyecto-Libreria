@@ -10,11 +10,11 @@ namespace Repositories.Interfaces
 {
     public interface IOrderRepository
     {
-        Task<List<Order>> GetOrders();
+        Task<List<OrderDTO>> GetOrders();
         Task<OrderDTO> GetOrder(int id);
         Task<OrderDTO> PostOrder(CreationOrderDTO creationOrderDTO);
         Task DeleteOrder(int id);
         Task<OrderDTO> PutOrder(UpdateBookDTO updateBookDTO);
-        Task<List<Order>> GetOrderbyDate(DateTime date);
+        Task<List<OrderDTO>> GetOrderbyDate(DateTime date);
     }
 }

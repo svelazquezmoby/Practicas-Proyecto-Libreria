@@ -10,7 +10,7 @@ namespace Services.Interfaces
 {
     public interface IBookService
     {      
-            List<Book> GetBooks();
+            List<BookDTO> GetBooks();
             void DeleteBook(int id);
             BookDTO GetBook(int id);
             BookDTO PutBook(UpdateBookDTO updateBookDTO);

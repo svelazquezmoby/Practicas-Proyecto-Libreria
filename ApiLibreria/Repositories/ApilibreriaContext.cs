@@ -16,8 +16,6 @@ public partial class ApilibreriaContext : DbContext
 
     public virtual DbSet<Book> Books { get; set; }
 
-    public virtual DbSet<LoginModel> LoginModels { get; set; }
-
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<OrderDetail> OrderDetails { get; set; }
@@ -38,19 +36,6 @@ public partial class ApilibreriaContext : DbContext
             entity.Property(e => e.Title).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<LoginModel>(entity =>
-        {
-            entity.HasKey(e => e.LoginId);
-
-            entity.ToTable("LoginModel");
-
-            entity.Property(e => e.Password)
-                .HasMaxLength(50)
-                .IsFixedLength();
-            entity.Property(e => e.UserName)
-                .HasMaxLength(50)
-                .IsFixedLength();
-        });
 
         modelBuilder.Entity<Order>(entity =>
         {

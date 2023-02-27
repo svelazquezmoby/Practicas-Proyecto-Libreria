@@ -37,7 +37,7 @@ namespace Services
             throw new NotImplementedException();
         }
 
-        public List<Book> GetBooks()
+        public List<BookDTO> GetBooks()
         {
             throw new NotImplementedException();
         }

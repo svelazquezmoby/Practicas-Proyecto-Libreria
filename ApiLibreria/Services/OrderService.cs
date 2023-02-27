@@ -32,12 +32,12 @@ namespace Services
             throw new NotImplementedException();
         }
 
-        public List<Order> GetOrderbyDate(DateTime date)
+        public List<OrderDTO> GetOrderbyDate(DateTime date)
         {
             throw new NotImplementedException();
         }
 
-        public List<Order> GetOrders()
+        public List<OrderDTO> GetOrders()
         {
             throw new NotImplementedException();
         }

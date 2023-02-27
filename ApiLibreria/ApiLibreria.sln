@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{39340FDA-628E-4A00-9CB5-9F7362343AE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{39340FDA-628E-4A00-9CB5-9F7362343AE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{45538C42-E05F-4FE6-BB6F-CEEF816C375B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBase", "DataBase\DataBase.csproj", "{45538C42-E05F-4FE6-BB6F-CEEF816C375B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{FFCDB967-77D0-4FB0-A3D3-BF2F3DFD0FC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{FFCDB967-77D0-4FB0-A3D3-BF2F3DFD0FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{8990CDB3-24A3-40A4-BF7D-6308057B61CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{8990CDB3-24A3-40A4-BF7D-6308057B61CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLibreria", "ApiLibreria\ApiLibreria.csproj", "{A928D881-D960-4AD4-81A9-91C87F17C8ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLibreria", "ApiLibreria\ApiLibreria.csproj", "{A928D881-D960-4AD4-81A9-91C87F17C8ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC4962DC-DD75-492C-BFEC-396FDE052D3D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

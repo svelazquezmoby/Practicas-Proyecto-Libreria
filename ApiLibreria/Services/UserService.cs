@@ -32,7 +32,7 @@ namespace Services
             throw new NotImplementedException();
         }
 
-        public Task<List<User>> GetUsers()
+        public Task<List<UserDTO>> GetUsers()
         {
             throw new NotImplementedException();
         }

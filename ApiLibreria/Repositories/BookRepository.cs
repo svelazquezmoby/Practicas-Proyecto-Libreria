@@ -50,11 +50,11 @@ namespace Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<Book>> GetBooks()
+        public async Task<List<BookDTO>> GetBooks()
         {
             var books = await _apilibreriaContext.Books.ToListAsync();
 
-            return _mapper.Map<List<Book>>(books);
+            return _mapper.Map<List<BookDTO>>(books);
         }
 
         public async Task<BookDTO> PostBook(CreationBookDTO creationBookDTO)

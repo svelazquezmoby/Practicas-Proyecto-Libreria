@@ -5,7 +5,7 @@ namespace Repositories.Interfaces
 {
     public interface IUserRepository    
     {
-        Task<List<User>> GetUsers();
+        Task<List<UserDTO>> GetUsers();
         Task<UserDTO> GetUser(int id);
         Task<UserDTO> PostUser(CreationUserDTO creationUserDTO);
         Task DeleteUser(int id);

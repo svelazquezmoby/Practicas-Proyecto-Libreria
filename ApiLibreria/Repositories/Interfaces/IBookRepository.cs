@@ -10,7 +10,7 @@ namespace Repositories.Interfaces
 {
     public interface IBookRepository
     {
-        Task<List<Book>> GetBooks();
+        Task<List<BookDTO>> GetBooks();
         Task<BookDTO> GetBook(int id);
         Task<BookDTO> PostBook(CreationBookDTO creationBookDTO);
         Task DeleteBook(int id);

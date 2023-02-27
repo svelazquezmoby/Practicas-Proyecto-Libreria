@@ -27,12 +27,12 @@ namespace Repositories
             throw new NotImplementedException();
         }
 
-        public Task<List<Order>> GetOrderbyDate(DateTime date)
+        public Task<List<OrderDTO>> GetOrderbyDate(DateTime date)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Order>> GetOrders()
+        public Task<List<OrderDTO>> GetOrders()
         {
             throw new NotImplementedException();
         }

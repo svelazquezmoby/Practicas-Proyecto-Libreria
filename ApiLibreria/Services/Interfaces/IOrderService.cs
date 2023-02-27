@@ -10,11 +10,11 @@ namespace Services.Interfaces
 {
     public interface IOrderService
     { 
-        List<Order> GetOrders();
+        List<OrderDTO> GetOrders();
         void DeleteOrder(int id);
         OrderDTO GetOrder(int id);
         OrderDTO PutOrder(UpdateBookDTO updateBookDTO);
         OrderDTO PostOrder(CreationOrderDTO creationOrderDTO);
-        List<Order> GetOrderbyDate(DateTime date);
+        List<OrderDTO> GetOrderbyDate(DateTime date);
     }
 }

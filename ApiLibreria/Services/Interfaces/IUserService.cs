@@ -10,7 +10,7 @@ namespace Services.Interfaces
 {
     public interface IUserService
     {
-        List<User> GetUsers();
+        List<UserDTO> GetUsers();
         void DeleteUser(int id);
         UserDTO GetUser(int id);
         UserDTO PutUser(UpdateUserDTO updateUserDTO);
